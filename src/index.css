@@ -1,0 +1,307 @@
+:root {
+  --primary: #1a257e;
+  --p-color: #605d5d;
+  --h-color: #1450a3;
+  --e-color: #dcb14a;
+  --font-color: #212529;
+  --black: #000;
+  --white: #fff;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* ==================atoms================= */
+.button {
+  padding: 7px 25px;
+  background-color: var(--h-color);
+  color: var(--white);
+  text-transform: capitalize;
+  border: transparent;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background-color: #3f4db6;
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.modal label input {
+  margin: 5px 0;
+}
+
+/* ========================header===================== */
+header {
+  background-color: var(--primary);
+}
+
+header .head-logo img {
+  width: 70px;
+}
+
+header .head-logo h4 {
+  font-size: 18px;
+  color: var(--white);
+}
+
+header .user button {
+  height: 40px;
+  width: 40px;
+  background-color: var(--white);
+  color: var(--h-color);
+  border: transparent;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+/* ====================sidebar==================== */
+.banner {
+  padding-top: 50px;
+}
+
+.sidebar {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.sidebar ul li {
+  padding: 0px 10px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.sidebar ul li a {
+  color: var(--font-color);
+  padding-left: 10px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.sidebar ul li:hover {
+  background-color: #712cf91a;
+}
+
+/* =======================table================== */
+.admintable table {
+  border: 1px solid #dee2e6;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.admintable table tr {
+  border-bottom: 1px solid #c7cbcf;
+}
+
+.admintable table th {
+  background-color: var(--h-color);
+  color: var(--white);
+  text-transform: capitalize;
+  border: none;
+}
+
+.admintable table img {
+  width: 70px;
+}
+
+.admintable table td button {
+  background-color: transparent;
+  color: var(--h-color);
+  font-size: 18px;
+  margin-right: 10px;
+  border: transparent;
+}
+
+/* =====================connection========================= */
+.collection-card .form-card .form-data {
+  padding: 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.collection-card .form-card .form-data h2 {
+  font-size: 17px;
+  color: var(--white);
+  font-weight: 600;
+  padding: 8px 10px;
+  background-color: var(--h-color);
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+/* ===========================login-form==================== */
+.login-form .login-back {
+  background-color: var(--primary);
+  height: 100vh;
+}
+
+.login-form .login-back img {
+  width: 150px;
+}
+
+.login-form .form label {
+  display: block;
+  width: 330px;
+  color: var(--black);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.login-form .form .admin-form {
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.login-form .form .admin-form h2 {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.login-form .form .admin-form input {
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.form .login-btn .log-btn {
+  background-color: transparent;
+  color: var(--font-color);
+  border: none;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.form .login-btn .log-btn:hover {
+  color: var(--h-color);
+}
+
+/* ================profile================== */
+.profile {
+  border: 1px solid #dee2e6;
+  position: fixed;
+  top: 62px;
+  right: 10px;
+  width: 250px;
+  background-color: var(--white);
+  text-align: center;
+  z-index: 1;
+}
+
+.profile .profile-name ul li a {
+  color: var(--font-color);
+  padding: 5px 10px;
+  display: inline-block;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.profile .profile-name ul {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.profile .space {
+  padding: 30px 0px;
+  background-color: var(--h-color);
+}
+
+.profile .user {
+  top: 12px;
+  left: 40%;
+}
+
+.profile .user button {
+  height: 40px;
+  width: 40px;
+  background-color: var(--white);
+  color: var(--h-color);
+  border: transparent;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.profile .profile-name .logout {
+  margin: 5px 0;
+  background-color: transparent;
+  border: none;
+}
+
+/* =======================user================ */
+.user .sidebar {
+  margin-top: 50px;
+}
+/* -=========================card================= */
+.card .card-data{
+ padding-bottom: 30px;
+  text-align: center;
+}
+.card .card-data h2{
+  padding: 5px 0;
+  background-color: var(--h-color);
+  font-size: 20px;
+  color: var(--white);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.card .card-data p{
+  color: var(--font-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.card .card-data li a{
+  color: var(--font-color);
+  text-transform: capitalize;
+}
